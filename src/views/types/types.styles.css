@@ -1,0 +1,14 @@
+.types-container {
+  background-color: rgb(119, 56, 155);
+}
+
+.type-title {
+  margin: 2rem;
+  background-color: #fff;
+  display: inline-block;
+  width: 50%;
+  margin: auto;
+  text-transform: uppercase;
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+}

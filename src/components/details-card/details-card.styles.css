@@ -1,0 +1,53 @@
+.details-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 66vw;
+  margin: auto;
+  background-color: blanchedalmond;
+  border-radius: 1rem;
+  border: 2px solid black;
+}
+
+.infos {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.image {
+  height: 50%;
+  width: auto;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.details {
+  width: 50%;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 33vh;
+}
+
+.types {
+  display: flex;
+  justify-content: space-around;
+  height: 50%;
+  padding: 1rem;
+  margin: 0;
+}
+
+.myList {
+  max-width: 40%;
+  margin: auto;
+}

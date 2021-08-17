@@ -1,0 +1,16 @@
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 333px;
+  background-color: rgb(192, 48, 48);
+  color: aliceblue;
+}
+
+.card-title {
+  text-transform: capitalize;
+}
