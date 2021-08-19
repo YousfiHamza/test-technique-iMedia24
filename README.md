@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+# React Coding Challenge
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+To complete this challenge, you will need to write a simple [React](https://facebook.github.io/react/) based web app, and provide us the source files to be built.
 
-In the project directory, you can run:
+The purpose of this challenge is to assess your **skills and approach to composing a simple web app** given a set of instructions.
 
-### `npm start`
+This challenge is expected to take about 2-3 hours.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## The Challenge
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+It's very simple. You'll need to build a set of React components to render the app. You'll also need to request a JSON feed, filter that data, and use the relevant fields.
 
-### `npm test`
+Although this is a basic exercise, we'll be looking for **simple, well-designed, performant, and tested code** in the submission.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Also, add the following info to your `README`:
 
-### `npm run build`
+- How did you decide on the technical and architectural choices used as part of your solution?
+- Are there any improvements you could make to your submission?
+- What would you do differently if you were allocated more time?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Details
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You will need to build the following 3 pages with React:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- A "Home" page
+- B "View pokemon" page
+- C "Types" page
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Please create components for each part of the page (eg. header, content, footer, etc).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The pages should also be usable on mobile and tablet devices.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### "Home" Page
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This will be your `index` screen.
 
-## Learn More
+You will need to display a paginated list of pokemons, each pokemon is clickable which takes to view pokemon page.
+- Page size: 20
+- Adding some filters is a plus (ex: by type).
+- Loading, error and empty states.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### "View pokemon" Page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Display the selected Pokemon details (name, picture, type...)
+- Display possible pokemon evolutions (clickable).
+- Clicking on type should take to the "Types" page.
+- Loading, error and empty states.
+
+### "Types" Page
+
+Display a list of pokemons belonging to the selected type
+- Clickable pokemons to "view pokemon" page.
+- Page size: 20.
+- Loading, error and empty states.
+
+## FAQ
+
+### What language, framework, build tool... should I use?
+
+You may use whatever you like as long as the solution is built using [React](https://facebook.github.io/react/).
+We prefer it if you did not use any third party CSS frameworks.
+
+You can use [create-react-app](https://create-react-app.dev/).
+
+We also prefer the use of minimal dependencies.
+
+## API Link
+https://pokeapi.co/
+
+## Other Notes
+
+Please send any other code or projects that you're proud of and would like to share with us.
+
+Any feedback on the coding challenge once you're done is also appreciated!
