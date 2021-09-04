@@ -1,7 +1,7 @@
-import React, { ReactNode, useEffect } from "react";
+import { ReactNode } from "react";
 import "./button.styles.css";
 
-interface Props {
+interface MyProps {
   color: string;
   backgroundColor: string;
   children?: ReactNode;
@@ -13,7 +13,7 @@ const CustomButton = ({
   backgroundColor,
   children,
   handleClick = () => {},
-}: Props) => {
+}: MyProps) => {
   return (
     <button
       className="button-container"

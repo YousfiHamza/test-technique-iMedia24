@@ -1,26 +1,26 @@
-import React from "react";
 import "./App.css";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Provider } from "react-redux";
 
 import Home from "./views/home/home.component";
-import Types from "./views/types/types.component";
-import Details from "./views/details/details.component";
 import Header from "./components/header/header.component";
+import createRootStore from "./redux/store/root.store";
 
 function App() {
+  const store = createRootStore();
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <div className="app-container">
-          <Switch>
-            <Route path="/types/:type" component={Types} />
-            <Route path="/details/:id" component={Details} />
-            <Route component={Home} />
-          </Switch>
+    <Provider store={store}>
+      <Router>
+        <div className="App">
+          <Header />
+          <div className="app-container">
+            <Switch>
+              <Route component={Home} />
+            </Switch>
+          </div>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </Provider>
   );
 }
 
