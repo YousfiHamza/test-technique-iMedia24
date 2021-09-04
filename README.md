@@ -1,78 +1,31 @@
 # React Coding Challenge
+
 ---
 
-## Overview
+## Goals/Outcomes :
 
-To complete this challenge, you will need to write a simple [React](https://facebook.github.io/react/) based web app, and provide us the source files to be built.
+- Test knowledge of consuming APIs and handling responses
+- Loading state and knowing where and how to make multiple API calls efficiently
+- Clean UI/UX implementation
 
-The purpose of this challenge is to assess your **skills and approach to composing a simple web app** given a set of instructions.
+## Requirements :
 
-This challenge is expected to take about 2-3 hours.
+- The app shall be implemented using ReactJS components and developed using either JavaScript or TypeScript, with the latter preferred.
+- Please use the Poke API v2 to fetch an initial list of pokemons, use Infinite scroll to display more items while scrolling (CSS Grid and Flexbox for responsive layout)
+- Upon selecting a pokemon from the list display a modal with more information
+- Loading state/UI
+- Write an example of unit test using Jest and React Testing Library;
+- Write an example of e2e test
 
-## The Challenge
+## Think about:
 
-It's very simple. You'll need to build a set of React components to render the app. You'll also need to request a JSON feed, filter that data, and use the relevant fields.
+- Where do you make the API requests?
+- How much logic do you offload out of the UI components?
 
-Although this is a basic exercise, we'll be looking for **simple, well-designed, performant, and tested code** in the submission.
+## Important:
 
-Also, add the following info to your `README`:
-
-- How did you decide on the technical and architectural choices used as part of your solution?
-- Are there any improvements you could make to your submission?
-- What would you do differently if you were allocated more time?
-
-## Details
-
-You will need to build the following 3 pages with React:
-
-- A "Home" page
-- B "View pokemon" page
-- C "Types" page
-
-
-Please create components for each part of the page (eg. header, content, footer, etc).
-
-The pages should also be usable on mobile and tablet devices.
-
-### "Home" Page
-
-This will be your `index` screen.
-
-You will need to display a paginated list of pokemons, each pokemon is clickable which takes to view pokemon page.
-- Page size: 20
-- Adding some filters is a plus (ex: by type).
-- Loading, error and empty states.
-
-### "View pokemon" Page
-
-Display the selected Pokemon details (name, picture, type...)
-- Display possible pokemon evolutions (clickable).
-- Clicking on type should take to the "Types" page.
-- Loading, error and empty states.
-
-### "Types" Page
-
-Display a list of pokemons belonging to the selected type
-- Clickable pokemons to "view pokemon" page.
-- Page size: 20.
-- Loading, error and empty states.
-
-## FAQ
-
-### What language, framework, build tool... should I use?
-
-You may use whatever you like as long as the solution is built using [React](https://facebook.github.io/react/).
-We prefer it if you did not use any third party CSS frameworks.
-
-You can use [create-react-app](https://create-react-app.dev/).
-
-We also prefer the use of minimal dependencies.
-
-## API Link
-https://pokeapi.co/
-
-## Other Notes
-
-Please send any other code or projects that you're proud of and would like to share with us.
-
-Any feedback on the coding challenge once you're done is also appreciated!
+- Type request/response
+- Use sagas for managing side effects
+- Use Redux
+- Unit tests and end to end tests
+- Style the component in a nice way (you can use any library)
